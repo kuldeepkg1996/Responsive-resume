@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+
+section{
+    display: block;
+}
+
+.left-section{
+    grid-column: span 1;
+    background-color: #242531;
+    color: white;
+}
+
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color:rgb(229, 225, 171);
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+    display: block;
+    margin: auto;
+    border: 5px white solid;
+    border-radius: 30%;
+    width: 60%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    color: rgb(210, 178, 240);
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.personal-details .icon{
+    display: block;
+    margin: 1% 15%;
+}
+li i{
+    color:rgb(195, 149, 238)
+}
+.social-media{
+   margin: 10px 0;     
+}
+.social-media .icon{
+    display: inline-block;
+    margin: 1% 8%;
+}
+.social-media a{
+    opacity: 0.3;
+}
+.social-media  a:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.social-media a:visited{
+    color: black;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+}
+
+.para{
+    line-height: 23px;
+    word-spacing: 1.5px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+ .box{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    font-size: 1rem;
+}
+.box .year{
+    min-width: 150px;
+}
+.year{
+    margin-bottom: 5px;
+    padding: 2px;
+}
+.sect{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.year-p{
+    margin-top:5px;
+}
+@media (max-width:673px) {
+    /* *{
+        font-size: 100%;
+    } */
+    .main-content{
+        /* width: 90%;
+        height: 1000px;
+        margin: 20px auto; */
+        grid-template-columns: repeat(1, 1fr);
+    }
